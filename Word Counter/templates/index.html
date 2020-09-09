@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Counter</title>
+</head>
+<body>
+	<form action="" method="post" style="border: solid 5px black; text-align: center;">
+		{{form.hidden_tag()}}
+		<p>
+			<b>Enter Text Below</b>
+			
+		</p>
+		<p>
+			{{form.textbox(cols=50, rows=10)}}
+		</p>
+
+		<p>
+			{{form.submit}}
+		</p>
+	</form>
+	<div style="text-align: center; margin-top: 10px; border: solid 3px black;">
+	<p><b>Word Count</b></p>
+	<p style="color: blue;">{{result}} words are present in your text</p>
+	</div>
+
+</body>
+</html>
